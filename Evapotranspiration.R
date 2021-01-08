@@ -50,7 +50,7 @@ for (i in waterSheds) {
   # mask non-forest
     map(function(x) x$updateMask(nlcd))
 
-  # extract ET values and dates by watershed
+  # extract ET values and dates by watershed (spatial summation of all the pixel values within the watershed)
   ee_nc_ET <- try(ee_extract(x = ET$select("sum"), y = region, sf = FALSE, scale = 500))
   if(class(ee_nc_ET) %in% 'try-error') {next} else {
     
