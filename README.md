@@ -8,6 +8,7 @@ Grab [Evapotranspiration](https://developers.google.com/earth-engine/datasets/ca
 ET(*w, t*) is the ET of watershed *w* at date *t*, *m* is a month of the year and mean<sub>u&isin;m</sub>[ET(*w, u*)]) and sd<sub>u&isin;m</sub>[ET(*w, u*)] are the mean and standard deviation of ET for watershed *w* over all dates, *u*, across the entire period (2003–2017) falling within month *m*, respectively.
 ET values are the summation of its three components: Vegetation transpiration (ET<sub>c</sub>), Soil evaporation (ET<sub>s</sub>), and Interception from vegetation canopy (ET<sub>i</sub>).
 ### StabilityMetrics.R
-Compute resistance and resilience of ET anomalies obtained by running Evapotranspiration.R. Resistance is computed on the scaled (-2, +2) ET anomaly time series as follows:
+Compute resistance and resilience of ET anomalies obtained by running Evapotranspiration.R. Resistance is computed on the scaled ET anomaly time series (-2, +2) as follows:
 
-ET<sup>*</sup><sub>rt</sub>(*w*)
+&#916;<sub>ET&#x5E;</sub>(*w*) 
+
