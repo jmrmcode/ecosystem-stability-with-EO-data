@@ -118,7 +118,7 @@ for (i in unique(annualET$basin)) {
 }
 names(ET_anomalies) <- unique(annualET$basin)
 
-# plot ET anomaly trajectory in a arbitrary watershed
+# plot ET anomaly trajectory in an arbitrary watershed
 basin <- "110800"
 ts <- ET_anomalies[[which(names(ET_anomalies)==basin)]]
 plot_ly(ts, x = ~Date, y = ~ET_anomaly, alpha = 1) %>% add_lines()
