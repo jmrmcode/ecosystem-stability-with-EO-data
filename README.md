@@ -12,4 +12,4 @@ Compute the resistance and resilience of ET anomalies obtained by running Evapot
 
 Resistance<sub>ET</sub>(*w*) = (mean[&#10698;<sub>ET>1</sub>])<sup>-1</sup> where &#10698;<sub>ET</sub> = 2 + [((-4)(&#916;<sub>ET</sub> - &#916;<sub>ETmin</sub>)) / (&#916;<sub>ETmax</sub> - &#916;<sub>ETmin</sub>)]. Note that &#10698;<sub>ET</sub> &#x220A; (-2, +2).
 
-Resilience is computed as recovery time following to [White et al. (2019)](https://zslpublications.onlinelibrary.wiley.com/doi/10.1002/rse2.148).
+Resilience is computed as recovery time similar to [White et al. (2019)](https://zslpublications.onlinelibrary.wiley.com/doi/10.1002/rse2.148).
