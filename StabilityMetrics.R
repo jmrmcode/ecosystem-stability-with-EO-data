@@ -1,7 +1,7 @@
 ## "ET_anomalies" object created in "Evapotranspiration.R" must be load 
 ## before running the code below
 
-#### COMPUTE RESISTANCE OF ET ANOMALY TIME SERIES
+#### COMPUTE RESISTANCE FROM TIME SERIES OF ET ANOMALIES
 
 library("BBmisc")
 # create an empty data frame to populate below
@@ -26,7 +26,7 @@ for (i in names(ET_anomalies)) {
 }
 
 
-## COMPUTE RESILIENCE OF ET ANOMALY TIME SERIES BASED ON WHITE ET AL 2019
+## COMPUTE RESILIENCE FROM TIME SERIES OF ET ANOMALIES BASED ON WHITE ET AL 2019
 
 library("lubridate")
 # create an empty data frame to populate below
