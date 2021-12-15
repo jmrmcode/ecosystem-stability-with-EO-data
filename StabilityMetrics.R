@@ -2,7 +2,7 @@ library("abind")
 library("lubridate")
 
 
-# load the ET time series (one per subbasin)
+# load the ET time series. Download it from this repository
 load(~/ET_timeSeriesBySubbasin.Rdata)
 
 #### COMPUTE RESILIENCE TO WATER LOSSES FROM THE TIME SERIES OF ET ANOMALIES
