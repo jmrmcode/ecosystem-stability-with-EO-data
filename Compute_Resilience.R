@@ -2,8 +2,8 @@ library("abind")
 library("lubridate")
 
 
-# load the ET time series. Download it from this repository
-load(~/ET_timeSeriesBySubbasin.Rdata)
+# load the ET time series. Download it from the main branch
+load(~/ET_anomalies.Rdata)
 
 #### COMPUTE RESILIENCE TO WATER LOSSES FROM THE TIME SERIES OF ET ANOMALIES
 ##  ANOMALIES ABOVE THE BASELINE
@@ -91,7 +91,8 @@ for (w in names(ET_anomalies)) {
   rec1 <- NULL
   }
 }
-
+head(resilET)
+rm(list = ls()) # remove all object before running the code below
 
 ### ET ANOMALIES BELOW THE BASELINE
 # create an empty data frame
@@ -177,3 +178,4 @@ for (w in names(ET_anomalies)) {
     rec1 <- NULL
   }
 }
+head(resilET)
