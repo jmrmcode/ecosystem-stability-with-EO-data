@@ -1,6 +1,6 @@
 # ecosystem-stability-with-EO-data
 A compilation of R code to import EO data from GEE and compute ecosystem stability metrics
-### Evapotranspiration.R
+### Compute_ET_anomalies.R
 Grab [Evapotranspiration](https://developers.google.com/earth-engine/datasets/catalog/CAS_IGSNRR_PML_V2) from GEE and compute ET anomalies (&#916;<sub>ET</sub>(*w, t*)) similar to [Goetz et al. (2006)](https://www.sciencedirect.com/science/article/abs/pii/S0034425706000289) and [White et al. (2019)](https://zslpublications.onlinelibrary.wiley.com/doi/10.1002/rse2.148) where
 
 &#916;<sub>ET</sub>(*w, t*) = (ET(*w, t*) - mean<sub>u&isin;m</sub>[ET(*w, u*)]) / sd<sub>u&isin;m</sub>[ET(*w, u*)]
