@@ -1,14 +1,14 @@
-library('ggplot2')
-library('reshape2')
-library('tidyr')
-library('plotly')
+library("ggplot2")
+library("reshape2")
+library("tidyr")
+library("plotly")
 library("aTSA")
 library("xts")
 library("lubridate")
 library("abind")
 library("ForeCA")
 
-load("~/")
+load("~/ET_timeSeriesBySubbasin.Rdata")
 
 ### convert the list of watersheds into a data frame
 annualET <- matrix(NA, nrow = length(lubridate::year(ET.Data[[1]][, 2])), ncol = length(ET.Data))
