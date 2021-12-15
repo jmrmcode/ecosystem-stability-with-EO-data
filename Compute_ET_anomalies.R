@@ -8,6 +8,7 @@ library("lubridate")
 library("abind")
 library("ForeCA")
 
+# import ET time series (download first ET_timeSeriesBySubbasin.Rdata from the main branch)
 load("~/ET_timeSeriesBySubbasin.Rdata")
 
 ### convert the list of watersheds into a data frame
