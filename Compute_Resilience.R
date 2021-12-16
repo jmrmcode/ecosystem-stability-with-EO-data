@@ -2,7 +2,7 @@ library("abind")
 library("lubridate")
 
 # load the ET time series. Download it from the main branch
-load(~/ET_anomalies.Rdata)
+load("~/ET_anomalies.Rdata")
 
 #### COMPUTE RESILIENCE TO WATER LOSSES FROM THE TIME SERIES OF ET ANOMALIES
 ##  USING A TEMPORAL MOVING WINDOW ALGORITHM BASED ON WHITE ET AL 2020 (in REMOTE SENSING IN ECOLOGY AND CONSERVATION)
@@ -96,6 +96,9 @@ rm(list = ls()) # remove all object before running the code below
 
 #### COMPUTE RESILIENCE TO PRODUCTIVITY LOSSES FROM THE TIME SERIES OF ET ANOMALIES
 ##  USING A TEMPORAL MOVING WINDOW ALGORITHM BASED ON WHITE ET AL 2020 (in REMOTE SENSING IN ECOLOGY AND CONSERVATION)
+
+# load the ET time series. Download it from the main branch
+load("~/ET_anomalies.Rdata")
 
 # create an empty data frame
 resilET <- data.frame(resil = as.numeric(), basin = as.numeric(), numbAnomal = as.numeric(), intensityBelow = as.numeric())
