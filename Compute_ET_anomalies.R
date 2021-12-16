@@ -30,6 +30,13 @@ annualET$region <- rep(substr(names(ET.Data), 1, 2), each = length(date))
 annualET <- na.omit(annualET)
 
 
+# plot an ET time series from an arbitrary watershed
+basin <- "8030205" # select a subbasin
+tss <- annualET[which(annualET$basin==basin), ]
+plot_ly(tss, x = ~date, y = ~ET, alpha = 1) %>%#color = ~ET,
+add_lines() %>% layout(yaxis = list(title="ET (mm/day)"))
+
+
 ### compute ET monthly anomalies (ET_i - mean(month))/ sd(month)
 ET_anomalies <- list()
 
@@ -55,7 +62,7 @@ for (i in unique(annualET$basin)) {
 }
 names(ET_anomalies) <- unique(annualET$basin)
 
-# plot ET anomaly trajectory from an arbitrary watershed
+# plot an ET anomaly time series from an arbitrary watershed
 basin <- "8030205"
 ts <- ET_anomalies[[which(names(ET_anomalies)==basin)]]
 plot_ly(ts, x = ~Date, y = ~ET_anomaly, alpha = 1) %>% add_lines()
