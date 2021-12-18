@@ -1,6 +1,6 @@
 library("INLA")
 
-# import the dataset
+# import the dataset. Read METADATA.txt for more information on the dataset
 data <- read.csv("~/ETresilience_HUC8subbasin.csv")
 
 # make copies of ecoregionLevelIII
