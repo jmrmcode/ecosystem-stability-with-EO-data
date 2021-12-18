@@ -9,4 +9,4 @@ ET(*s, t*) is the mean modeled ET in forests from subbasin *s* at date *t*, *m* 
 ### Compute_Resilience.R
 Code for computing resilience to water (positive anomalies) and productivity (negative anomalies) losses using a temporal moving window algorithm based on [White et al. (2019)](https://zslpublications.onlinelibrary.wiley.com/doi/10.1002/rse2.148).
 ### Model_Resilience.R
-Code to run varying-intercepts and -slopes mixed models using INLA.
+Code to run varying-intercept, varying-slope models using INLA.
