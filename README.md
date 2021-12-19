@@ -1,5 +1,5 @@
 # ecosystem-stability-with-EO-data
-A compilation of R code to compute and model ecosystem stability metrics (resilience) from remotely-sensed time series of forest evapotranspiration (ET).
+A compilation of R code to compute and model ecosystem stability metrics (resilience) from remotely-sensed time series of forest evapotranspiration (ET). This release has been published on Zenodo: 
 ### Compute_ET_anomalies.R
 Code for computing monthly ET anomalies (&#916;<sub>ET</sub>(*s, t*)) using [Zhang et al. (2019)](https://www.sciencedirect.com/science/article/abs/pii/S003442571830590X) [dataset](https://developers.google.com/earth-engine/datasets/catalog/CAS_IGSNRR_PML_V2) and following [Goetz et al. (2006)](https://www.sciencedirect.com/science/article/abs/pii/S0034425706000289) and [White et al. (2019)](https://zslpublications.onlinelibrary.wiley.com/doi/10.1002/rse2.148) approach where
 
